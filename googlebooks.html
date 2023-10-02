@@ -9,6 +9,16 @@
 
       <body>
         <h1>Personal Library</h1>
+        <div id="contnet">
+            <script>
+                function solveResponse(response) {
+                    for (var i = 0; i < response.items.length; i++) {
+                        var book = response.items[i];
+                        document.getElementById("content").innerHTML += "<br>" + book.volumeInfo.title;
+                    }
+                }
+            </script>
+            <script src="https://www.googleapis.com/books/v1/volumes?q=harry+potter&callback=handleResponse"></script>
+        </div>
       </body>
-
 </html>
