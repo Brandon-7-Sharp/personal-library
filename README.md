@@ -44,9 +44,6 @@ This website is used for those who do not own the books that they have read. Wit
 ## Future Development Goals
 I plan on adding several more features and display changes to improve the user experience.
 
-1) Fix title and author text to not go off of their book.
-2) Change the title and author text color depending on the color of the book.
-3) Create several bookshelves based on the number of books instead of one long bookshelf.
-4) Add different pages to the website:
-    
+1) Create several bookshelves based on the number of books instead of one long bookshelf.
+2) Add different pages to the website:
     * Stats Page: Shows graphs on the types of books that the reader reads and their rating based on each genre.
