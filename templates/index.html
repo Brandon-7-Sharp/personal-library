@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    html,* { font-family: 'Inter'; box-sizing: border-box;}
+    body { background-color: #222; line-height: 1.6;}
+    h1,h2 {color: #fff;}
+    .lead {font-size: 1.5rem; font-weight: 300; color: #fff; margin: 3rem auto;}
+    .container { margin: 150px auto; max-width: 960px;}
+</style>
+<link rel="stylesheet" href="../static/bookshelf.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Personal Library</h1>
+     <div class="fileupload">
+        <div class="uploading">
+            {% block body %}
+            <p class="lead">Upload An Exported Bookshelf Goodreads CSV File</p>
+            <form method="POST" enctype="multipart/form-data" action="/">
+                <input type="file" id="myFile" name="filename" accept=".csv">
+                <input type="submit">
+            </form>
+            {% endblock %}
+        </div>
+    </div>
+    {% block content %}
+    <div class="container">
+        <div class="bookshelf">
+            {% for book in books %}
+            <div class="book">
+            <div class="side spine">
+                <span class="spine-title"> {{ book[0] }} </span>
+                <span class="spine-author"> {{ book[1] }}</span>
+            </div>
+            <div class="side top"></div>
+            <div class="side cover"></div>
+            </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+    {% endblock %}
+</body>
+    <script type="module" src="../static/bookshelf.js">
+    </script>
+</html>
