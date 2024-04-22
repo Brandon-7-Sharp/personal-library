@@ -5,6 +5,9 @@
 ## Description
 This program displays a bookshelf from the information given to it by a goodreads bookshelf csv file.
 
+## Homepage
+![img.png](Images/homepage.png)
+
 ## Getting Started
 The first thing you will need to do is create a goodreads account if you do not already have one.
 Once you have created one and added your books that you have read to it, you can then follow the below instructions to get a csv file with your books to use as input for this program.
@@ -23,7 +26,7 @@ Then click the 'Submit' button.
 The webpage now displays your bookshelf with the Titles and Authors (Example Shown Below).
 
 
-![img.png](Images/BookshelfExample.png)
+![img.png](Images/bookcase.png)
 
 ## Explanation
 This program uses two main utilities to create this bookshelf:
